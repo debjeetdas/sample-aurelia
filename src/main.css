@@ -1,0 +1,86 @@
+.container-css{
+     padding:0px;
+}
+
+.navbar-default {
+    background-color: #0087c3;
+    border-color: transparent;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+.navbar-brand > img {
+    display: block;
+}
+.navbar-brand {
+    padding: 7px 15px;
+}
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.app-nav-head {
+    padding-left: 12px;
+    padding-top: 15px;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+.side-li{
+    margin-top:22px;
+}
+.sidebar{
+    height:100vh;
+    background-color: black;
+}
+.aurelia-view{
+     margin-top:22px;
+}
+
+/*home page css*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.singUp {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*button:hover {
+    opacity: 0.8;
+}*/
+.loginForn{
+    width:500px;
+    margin:auto;
+}
+.login-profile{
+    width:80px;
+    margin:auto;
+}
+
+/*table css*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}

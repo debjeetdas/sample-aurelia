@@ -1,0 +1,55 @@
+<!--<template>
+  <h1>${message}</h1>
+</template>-->
+<!--<template>
+   <nav>
+      <ul>
+         <li repeat.for = "row of router.navigation">
+            <a href.bind = "row.href">${row.title}</a>
+         </li>
+      </ul>
+   </nav>
+	
+   <router-view></router-view>
+</template>-->
+
+
+<template>
+
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="main.css"></require>
+  <require from = "./components/header.html"></require>
+  
+   
+   <!--<nav>
+      <ul>
+         <li repeat.for = "row of router.navigation">      
+            <a href.bind = "row.href">${row.title}</a>
+         </li>
+      </ul>
+   </nav>-->
+	
+
+	
+   
+	
+ 
+<header></header>
+  <div class="container-fluid container-css">
+        
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 sidebar">
+              <div class="list-group side-li" repeat.for = "row of router.navigation">
+                <a  href.bind="row.href" class="list-group-item active text-center">
+                  <h4 class="glyphicon glyphicon-plane"></h4><br/>${row.title}
+                </a>
+               
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 aurelia-view">
+ 
+               <router-view></router-view>
+            </div>
+  
+</div>
+</template>
+

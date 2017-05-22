@@ -1,0 +1,51 @@
+<template>
+   <button click.delegate = "getData()">GET</button>
+   <button click.delegate = "postData()">POST</button>
+   <button click.delegate = "updateData()">PUT</button>
+   <button click.delegate = "deleteData()">DEL</button>
+
+   <div class="tablediv">
+   <table>
+     <thead>
+       <tr>
+         <th>Id</th>
+         <th>Name</th>
+         <th>Text</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>${jsonValue.id}</td>
+          <td>${jsonValue.title}</td>
+          <td>${jsonValue.body}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+   <div class="tablediv">
+   <table>
+     <thead>
+       <tr>
+         <th>name</th>
+         <th>alpha2_code</th>
+         <th>alpha3_code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="localjsonValue of localjsonValue">
+          <td>${localjsonValue.name}</td>
+          <td>${localjsonValue.alpha2_code}</td>
+          <td>${localjsonValue.alpha3_code}</td>
+         
+      </tr>
+    </tbody>
+  </table>
+</div>
+</template>
+
+<!--<template>
+  <button click.delegate = "getData()">GET</button>
+   <button click.delegate = "postData()">POST</button>
+   <button click.delegate = "updateData()">PUT</button>
+   <button click.delegate = "deleteData()">DEL</button>
+</template>-->

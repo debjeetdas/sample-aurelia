@@ -1,0 +1,40 @@
+<template>
+    <h1>ADD USER</h1>
+    <form role = "form" submit.delegate = "AddUser()">
+
+    
+      <label for = "Name">Name</label>
+      <input type = "text" value.bind = "name" placeholder = "Name">
+    
+  
+      <label for = "email">Email</label>
+      <input type = "text" value.bind = "emailId" placeholder = "email">
+ 
+      <label for = "Role">Role:</label>
+      
+      <select value.bind="selectedVal">
+            <option repeat.for="option of someOptions" value="${option.name}" model.bind="option">${option.name}</option>
+        </select>
+
+     <button type="submit">adduser</button>
+
+   </form>
+<div class="tablediv">
+   <table>
+     <thead>
+       <tr>
+         <th>EmailId</th>
+         <th>Name</th>
+         <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for = "line of tablevalue">
+          <td>${line.emailId}</td>
+          <td>${line.name}</td>
+          <td>${line.role}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</template>
